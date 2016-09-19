@@ -44,7 +44,6 @@
 /******************/
 #typed_content {
   font-weight: 700;
-  font-size: 45px;
   line-height: 1.2;
 }
 
@@ -101,14 +100,15 @@ background-attachment: fixed;
   padding: 30px 30px 70px 30px;
 }
 .section_heading {
-  padding-bottom: 7px;
-  line-height: 1.7;
-border-bottom: 2px solid #efefef;
+  padding-bottom: 9px;
+line-height: 1.7;
+border-bottom: 1px solid #eaeaea;
 display: inline-block;
 color: #7d7979;
-font-size: 21px;
-letter-spacing: 7px;
-font-weight: 300;
+font-size: 17px;
+letter-spacing: 3px;
+font-weight: 700;
+
 }
   .content_container {
 box-shadow: 0px -7px 10px -5px #000
@@ -130,7 +130,7 @@ box-shadow: 0px -7px 10px -5px #000
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding:0px 10px 0px 10px;
+
   }
   .work_content_container {
     height:300px;
@@ -149,7 +149,7 @@ box-shadow: 0px -7px 10px -5px #000
   left:0;
   top:0;
   transform:translateY(-100%);
-  box-shadow: 0px 2px 9px -1px #000000;
+  box-shadow: 0px 2px 3px -1px #000000;
 
 }
 .dropNav {
@@ -207,7 +207,7 @@ animation-duration: .6s;
 }
 .nav_links_main {
   padding:19px;
-  border-bottom: 1px solid #1b1b1b;
+  border-top: 1px solid #0c0c0c;
 }
 .page_link_nav {
   font-size: 16px;
