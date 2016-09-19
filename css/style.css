@@ -68,12 +68,12 @@ background-attachment: fixed;
   transition: all .3s;
   position:fixed;
 
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.3);
 
 
 }
 .landing_content_container {
-  margin-top: 120px;
+  margin-top: 20px;
 }
 
 .content_section {
@@ -310,7 +310,7 @@ padding: 15px;
 
 }
 #instagram_logo {
-  background-image: url("../images/instagram-icon.svg");
+  background-image: url("../images/Instagram-icon.svg");
 
 
 }
