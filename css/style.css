@@ -72,9 +72,9 @@ background-attachment: fixed;
 
 }
 .landing_content_container {
-  box-sizing: border-box;
-  padding:15px;
-  position: absolute;
+    box-sizing: border-box;
+    padding:15px;
+    position: absolute;
     top: 50%;
     right: 0;
     left: 0;
@@ -93,7 +93,7 @@ background-attachment: fixed;
 }
 .welcome_messages  {
   color:#f7f7f7;
-  font-size: 30px;
+  font-size:21px;
   line-height: 1.7;
   font-weight: 300;
 
