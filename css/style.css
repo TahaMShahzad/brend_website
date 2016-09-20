@@ -72,13 +72,17 @@ background-attachment: fixed;
 
 }
 .landing_content_container {
-    box-sizing: border-box;
-    padding:15px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    transform: translateY(-50%);
+  box-sizing: border-box;
+
+position: absolute;
+top: 50%;
+right: 0;
+left: 0;
+transform: translateY(-50%);
+height: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .content_section {
@@ -92,11 +96,10 @@ background-attachment: fixed;
   top:100%;
 }
 .welcome_messages  {
-  color:#f7f7f7;
-  font-size:21px;
+  color: #f7f7f7;
+  font-size: 16px;
   line-height: 1.7;
   font-weight: 300;
-
 }
 .header_container_outer {
     display: flex;
