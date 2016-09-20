@@ -72,7 +72,13 @@ background-attachment: fixed;
 
 }
 .landing_content_container {
-  margin-top: 20px;
+  box-sizing: border-box;
+  padding:15px;
+  position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
 }
 
 .content_section {
@@ -87,7 +93,7 @@ background-attachment: fixed;
 }
 .welcome_messages  {
   color:#f7f7f7;
-  font-size: 27px;
+  font-size: 30px;
   line-height: 1.7;
   font-weight: 300;
 
@@ -136,12 +142,14 @@ box-shadow: 0px -7px 10px -5px #000
     height:300px;
     margin-bottom: 10px;
     background-color: #202020;
+
     width:100%;
 
   }
 
 .navigator_menu {
   position: fixed;
+
   transition: all .4s;
   transition-timing-function: ease-in-out;
   width:100%;
@@ -150,6 +158,8 @@ box-shadow: 0px -7px 10px -5px #000
   top:0;
   transform:translateY(-100%);
   box-shadow: 0px 2px 3px -1px #000000;
+  background-color:#000000;
+
 
 }
 .dropNav {
@@ -190,7 +200,7 @@ animation-duration: .6s;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-sizing: border-box;
-  background-color:rgba(0,0,0,1);
+
 }
 
 .nav_container_main {
