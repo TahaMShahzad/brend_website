@@ -76,3 +76,10 @@ text-align: right;
 .font_weight_500 {
     font-weight: 500;
 }
+.reset_link {
+  text-decoration: none;
+
+}
+.link {
+  color:#f7f7f7;
+}
