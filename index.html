@@ -359,7 +359,11 @@
         }
 
         this.logoContainerWidthController = function () {
-          window.addEventListener("load",  resizeAndLoad);
+          document.onreadystatechange = function () {
+            if(document.readyState == 'complete') {
+              resizeAndLoad();
+            }
+          }
           window.addEventListener("resize",  resizeAndLoad);
         }
         function resizeAndLoad() {
