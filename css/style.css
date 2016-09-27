@@ -1,4 +1,4 @@
-
+/*
 
 ::-webkit-scrollbar {
     width: 2px;
@@ -21,11 +21,67 @@
 }
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255,0,0,0.4);
-}
+}*/
 
 /* typing Effect Css */
+
+
+
 .blink {
    animation : blink 1s 0s infinite;
+}
+.wrap_all {
+  width:100%;
+
+
+  box-sizing: border-box;
+  background-color: #FFF;
+
+
+}
+.bring_down_wrapper {
+  position: relative;
+  top:100vh;
+  background-color: #dadada;
+}
+.inner_wrapper {
+  max-width:1100px;
+  margin:0 auto;
+  position: relative;
+
+
+}
+.all_content_wrapper {
+  position: relative;
+}
+.navigation_container {
+  position: fixed;
+  width:100%;
+  top:0;
+  z-index: 999;
+}
+.main_navigation_container {
+  max-width:1100px;
+  margin: 0 auto;
+}
+.menu_main_container {
+  margin: 10px;
+  z-index: 3;
+  line-height: 0;
+}
+.navigator_menu {
+  display: none;
+  transition: all .4s;
+  transition-timing-function: ease-in-out;
+  width:100%;
+  z-index: 1;
+  left:0;
+  top:0;
+
+
+  background-color:#000000;
+
+
 }
   @keyframes blink {
    0% {
@@ -48,31 +104,40 @@
 }
 
 .body {
-
+  /*background-image: url('../images/main_bg_small.jpg');*/
+  background-size: cover;
+  background-color: #dadada;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
-background-image: url('../images/main_bg_small.jpg');
 
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-color: #29292b;
-background-attachment: fixed;
+
 
 }
 
+.landing_main_content {
+  height: inherit;
+  max-width: 1100px;
+  margin:0 auto;
 
-.landing_section {
+
   padding:20px;
   box-sizing: border-box;
   transition: all .3s;
-  position:fixed;
   flex-direction: column;
   justify-content: space-between;
-
-  background-color: rgba(0,0,0,0.3);
-
-
 }
+.landing_section {
+  height: calc(100vh - 52px);
+  position: fixed;
+  top:52px;
+  right:0;
+  left:0;
+}
+
+
+
 .landing_content_container {
   box-sizing: border-box;
   flex-direction: column;
@@ -85,15 +150,12 @@ background-attachment: fixed;
 }
 
 .content_section {
-  background-color: #F4F9F9;
+
   text-align: center;
 
 
 }
-.content_section_wrapper {
-  position: relative;
-  top:100%;
-}
+
 .welcome_messages  {
   color: #f7f7f7;
   font-size: 21px;
@@ -104,8 +166,9 @@ background-attachment: fixed;
     display: flex;
     justify-content: space-between;
 }
+
 .section_heading_container {
-  padding: 30px 30px 70px 30px;
+  padding: 30px;
 }
 .section_heading {
   padding-bottom: 9px;
@@ -119,13 +182,13 @@ font-weight: 700;
 
 }
   .content_container {
-box-shadow: 0px -7px 10px -5px #000
+
 
 
   }
   .main_logo {
-    width: 71px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,28 +204,15 @@ box-shadow: 0px -7px 10px -5px #000
 
   }
   .work_content_container {
-    height:300px;
-    margin-bottom: 10px;
-    background-color: #202020;
+    height: 280px;
 
-    width:100%;
+background-color: #202020;
+width: 500px;
+
 
   }
 
-.navigator_menu {
-  position: fixed;
-  transition: all .4s;
-  transition-timing-function: ease-in-out;
-  width:100%;
-  z-index: 1;
-  left:0;
-  top:0;
-  transform:translateY(-100%);
-  box-shadow: 0px 2px 3px -1px #000000;
-  background-color:#000000;
 
-
-}
 .dropNav {
   transform: translateY(0);
 }
@@ -227,19 +277,10 @@ animation-duration: .6s;
   text-decoration: none;
   font-weight: 600;
 }
-.menu_main_container {
 
-  margin: 20px;
-  position: fixed;
-  top:0;
-  right:0;
-  z-index: 3;
-
-  line-height: 0;
-
+.menu_btn {
 
 }
-
 .bring_in {
   right:0;
 }
@@ -251,7 +292,7 @@ animation-duration: .6s;
 
 
   box-sizing: border-box;
-  background-color: #222222;
+
 
 }
 
@@ -292,10 +333,8 @@ animation-duration: .6s;
 }
 .sm_list {
   justify-content: center;
-}
-.logo_li_containers {
-
-padding: 15px;
+}.logo_li_containers{
+    padding: 15px;
     background-color: #1b1b1b;
     margin: 0px 10px;
 
@@ -308,7 +347,7 @@ padding: 15px;
 
 }
 .our_clients_container_main  {
-  height:150px;
+  height:200px;
 }
 #twitter_logo {
 
@@ -366,9 +405,10 @@ margin-top: 8px;
 }
 
 .copyright {
-  font-size: 12px;
-color: #7b7b7b;
-padding: 30px 0px 5px 0px;
+  font-size: 13px;
+      color: #7b7b7b;
+      padding: 30px 0px 10px 0px;
+
 }
 
 .work_content_container_main {
@@ -383,16 +423,19 @@ padding: 30px 0px 5px 0px;
 /*buttons*/
 .btn {
 
-    border: 2px solid;
+    border: 1px solid;
     border-color: #F7f7f7;
     margin-top: 20px;
     letter-spacing: 3px;
     color: #dedede;
-    padding: 12px 26px;
     font-size: 14px;
     font-weight: 700;
     background-color: rgba(0,0,0,0.2);
-
+}
+.btn a {
+  padding:15px 45px;
+  display: block;
+}
 
 /*background: rgba(255,255,255,1);
 background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(173,173,173,1) 29%, rgba(232,229,232,1) 59%, rgba(82,82,82,1) 100%);
@@ -402,3 +445,68 @@ background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(173,173,173,
 background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(173,173,173,1) 29%, rgba(232,229,232,1) 59%, rgba(82,82,82,1) 100%);*/
 /*background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(173,173,173,1) 29%, rgba(232,229,232,1) 59%, rgba(82,82,82,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#525252', GradientType=1 );*/
+/* our clients slider */
+.slider_face {
+  overflow: hidden;
+}
+.client_logo_container {
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  display: table-cell;
+  float: left;
+  width:275px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+#client_logo_1 {
+  background-image: url("../images/1_client.svg");
+}
+
+#client_logo_2 {
+background-image: url("../images/2_client.svg");
+}
+#client_logo_3 {
+background-image: url("../images/3_client.svg");
+}
+#client_logo_4 {
+background-image: url("../images/6_client.svg");
+}
+#client_logo_5 {
+background-image: url("../images/5_client.svg");
+}
+.client_logo_container {
+
+
+}
+.about_us_content {
+  padding:15px;
+  box-sizing: border-box;
+
+  max-width: 550px;
+}
+.section_content_container {
+
+}
+.content_about_us_inner {
+  line-height: 1.5;
+    font-size: 18px;
+    color: #585656;
+    font-weight: 300;
+}
+.content_inner_heading {
+  color: #191919;
+font-size: 21px;
+margin: 12px 0px;
+font-weight: 700;
+
+}
+
+
+#footer {
+  background-color: #222222;
+}
