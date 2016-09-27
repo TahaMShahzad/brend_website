@@ -3,7 +3,7 @@
     src: url('../fonts/Avenir.ttc');
 }
 body * {
-  font-family: brendFont;
+  font: 400 16px/1.667 "Open Sans",sans-serif;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -78,8 +78,4 @@ text-align: right;
 }
 .reset_link {
   text-decoration: none;
-
-}
-.link {
-  color:#f7f7f7;
 }
